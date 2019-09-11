@@ -1,10 +1,16 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 
+
 const PhotoCard = () => {
-    let imgURL= null;
+    let imgURl= null;
     const [imgValue, setImgValue] = useState ("");
 
+    useEffect(() => {
+    
+    }, [])
+
+ 
     return (
         <div>
             <h1>
@@ -13,3 +19,5 @@ const PhotoCard = () => {
         </div>
     )
 }
+
+export default PhotoCard;
