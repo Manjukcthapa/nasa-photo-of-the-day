@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -31,3 +31,19 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  background-color:#51A0D5;
+  display:flex;
+  flex-direction: row ;
+  
+}
+
+
+
+/* .photocard{
+  height:500px;
+  width:600px;
+  text-align: center;
+  border:1px solid black
+} */

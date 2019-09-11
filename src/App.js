@@ -1,12 +1,16 @@
 import React from "react";
 import "./App.css";
 import PhotoCard from "./Component/PhotoCard";
-import Header from "./Component/Header"
+import Header from "./Component/Header";
 function App() {
   return (
     <div className="App">
-    <Header/>
-      <PhotoCard/>
+      <div className="header">
+        <Header />
+      </div>
+      <div className="photocard">
+        <PhotoCard />
+      </div>
     </div>
   );
 }

@@ -12,7 +12,7 @@ function PhotoCard() {
     useEffect(() => {
         axios.get('https://api.nasa.gov/planetary/apod?api_key=74Cyf1i7aAfIDPJPSNGUt622Dn3c072942FuCQ17')
         .then((res) => {
-            setImage(res.data.url);
+            setImage(res.data.hdurl);
             setTitle(res.data.title);
             setStory(res.data.explanation);
             return res;
@@ -31,8 +31,10 @@ function PhotoCard() {
         <header />
         <div >
         <Date date={date} />
-          <NasaImg image={image} title={title} explanation={story} />
-          <a href="https://www.nasa.gov/"> Courtesy NASA.gov</a>
+        <div  className="dataapi">
+          <NasaImg  image={image} title={title} explanation={story} />
+          </div>
+          {/* <a href="https://www.nasa.gov/"> Courtesy NASA.gov</a> */}
         </div>
       </div>
     );
