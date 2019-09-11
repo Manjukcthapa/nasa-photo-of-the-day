@@ -1,35 +1,34 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import NasaImg from "./NasaImg"
 
 
-const PhotoCard = () => {
-    let imgURl= null;
-    const [imgValue, setImgValue] = useState ("");
-
+function PhotoCard() {
+    const [ image, setImage ] = useState();
+  
     useEffect(() => {
-        //to request information from the server
-        axios.get(`https://api.nasa.gov/planetary/apod?api_key=74Cyf1i7aAfIDPJPSNGUt622Dn3c072942FuCQ17`)        
-        //if successful
-        .then(success => {
-            console.log('Success');
-            imgURl = success.data.url;
-            console.log(imgURl)
-            setImgValue(imgURl);
+        axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+        .then((res) => {
+            setImage(res.data.url);
+            return res;
         })
-        //if not successful
-        .catch(failure => {
-            console.log('Failure');
+        .then((res) => {
+          console.log(res.data)
         })
+        .catch( (error) =>{
+            console.log(error);
+          })
     }, [])
-
- 
+  
     return (
-        <div>
-            <h1>
-                Hello
-            </h1>
+      <div>
+        <header />
+        <div >
+          <NasaImg image={image}/>
+          <a href="https://www.nasa.gov/"> Courtesy NASA.gov</a>
         </div>
-    )
-}
-
-export default PhotoCard;
+      </div>
+    );
+  }
+  
+  export default PhotoCard;

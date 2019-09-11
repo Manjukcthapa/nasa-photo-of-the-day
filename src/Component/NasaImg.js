@@ -1,11 +1,12 @@
 import React from "react";
 
-const NasaImg = (props) => {
-    return(
-        <div>
-            
-        </div>
-    )
-       
-    
+export default function NameImg (props) {
+    return (
+      <div >
+      
+          <img src={props.image} />
+          
+      
+      </div>
+    );
 }
