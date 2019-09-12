@@ -1,14 +1,31 @@
 import React from 'react';
 import "./Nasapic.css";
+import styled from "styled-components";
+
+const Headers = styled.div`
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;`
+
+const Image = styled.img`
+height: 120px;
+  width: 140px;
+  margin-left: 50px;`
+
+const H1 = styled.h1`
+margin-left: 250px;
+margin-top:50px;
+color: white;
+`
 
 function  Header(props) {
     return (
-        <div className='header'>
+        <Headers className='header'>
             <div className="img">
-            <img className="images" src="https://seeklogo.com/images/N/NASA-logo-9411797223-seeklogo.com.png" />
+            <Image  src="https://seeklogo.com/images/N/NASA-logo-9411797223-seeklogo.com.png" />
             </div> 
-            <div><h1 className="text">NASA Photo of the Day!</h1></div>
-        </div>
+            <div><H1>NASA Photo of the Day!</H1></div>
+        </Headers>
     )
 }
 

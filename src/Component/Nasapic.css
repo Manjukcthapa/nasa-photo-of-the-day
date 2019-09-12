@@ -1,8 +1,4 @@
-.images {
-  height: 120px;
-  width: 120px;
-  margin-left: 50px;
-}
+
 
 header {
   display: flex;
@@ -14,10 +10,6 @@ header {
   text-align: center;
 }
 
-.text {
-  margin-left: 300px;
-  color: white;
-}
 
 .imagelist {
   width: 700px;
