@@ -4,9 +4,9 @@ import styled from "styled-components";
 const Photo = styled.img`
 height: 500px;
 width: 600px;
-margin-left: 100px;
-margin-top: 70px;
-border: 10px solid transparent;
+margin-left: 190px;
+margin-top: 80px;
+border: 10px solid grey;
 `
 
 

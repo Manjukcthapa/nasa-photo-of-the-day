@@ -1,9 +1,8 @@
 import React from "react";
-import "./Nasapic.css";
 import styled from "styled-components";
 
 const Headers = styled.div`
-  background-color: #51a0d5;
+  background-color: #046b99;
   display: flex;
   flex-direction: row;
 `;
