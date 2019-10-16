@@ -1,0 +1,53 @@
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cards {
+  text-align: center;
+}
+
+
+.imagelist {
+  width: 700px;
+  height: 400px;
+  margin-top: 60px;
+}
+
+.cards {
+  margin-left: 20px;
+  border: 2px solid black;
+  background-color: #c5c5c5;
+}
+
+p {
+  width: 100%;
+  font-family: italic;
+  padding: 2px;
+  font-size: 24px;
+}
+
+.dataapi {
+  height: 100px;
+  width: 1000px;
+  margin-left: 100px;
+  margin-top: 70px;
+}
+
+.footer {
+  background-color: #51a0d5;
+  margin-top: 800px;
+  height: 120px;
+}
+
+.link {
+  margin-left: 400px;
+  padding-top: 39px;
+}
+
+span {
+  margin-top: 40px;
+}
